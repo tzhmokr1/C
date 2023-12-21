@@ -1,0 +1,60 @@
+
+Im vorgegeben Code-Beispiel gibt es ein Problem mit dem Anweisungsblock der ersten if-Anweisung,
+
+Da die zwei Anweisungen b=0; und c=6; nicht mit { } zusammengefasst werden, gilt gemäss den Syntaxregeln, 
+dass die Anweisung c = 6; immer ausgeführt wird, da sie nicht zur if-Anweisung zugeordnet wird.
+Dabei ist besonders zu beachten, dass die Einrückungen von Anwesiungen im Quellcode für den Compiler 
+nicht massgebend sind, sondern nur eine optische Gruppierung für den Programmierer darstellen.
+Entsprechend wird die printf()-Anweisung, trotz verwirrender Einrückung,  korrekt für alle Fälle ausgeführt.
+Ferner soll c ja nicht gesetzt werden, wenn a negativ ist.
+
+
+Korrigierter Code:
+
+
+if (a < 0) 
+  b = -1;
+else if (a < 5) {
+  b = 0;
+  c = 6;
+} else 
+  b = 1;
+printf("a=%d, b=%d, c=%d\n", a, b, c);
+
+
+Wenn man solche Fhler mit Sicherheit vermeiden will, so setzt man konsequent die Anweisungen 
+unter Kontrollstrukturen in { }.
+
+Im Beispiel:
+
+if (a < 0) {
+  b = -1;
+} else if (a < 5) {
+  b = 0;
+  c = 6;
+} else { 
+  b = 1;
+}
+printf("a=%d, b=%d, c=%d\n", a, b, c);
+
+
+Dies führt jedoch zu einer optischen Aufblähung des Quellcodes, die nicht immer erwünscht wird.
+Das hängt aber auch von der benutzen Platzierungsstrategie der geschweiften Klammern ab.
+
+Beispiel für ungünstige Klammer-Platzierung 
+(benötigt fünf Quellcodezeilen mehr, als die minimal korrekte vollstädnige Benutzung von {})
+
+if (a < 0) 
+{
+  b = -1;
+} 
+else if (a < 5) 
+{
+  b = 0;
+  c = 6;
+} 
+else 
+{ 
+  b = 1;
+}
+printf("a=%d, b=%d, c=%d\n", a, b, c);

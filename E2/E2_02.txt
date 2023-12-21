@@ -1,0 +1,22 @@
+Es gibt natürlich mehrere gültige Lösungen!
+
+Eine erste Variante wäre beispielsweise:
+
+int fakultaet(int value);
+
+Jetzt ist es aber so, dass bereits die Fakultät einer 
+relativ kleinen Zahl eine sehr grosse Zahl liefert,
+so ist z.B. 
+
+!20 = 2'432'902'008'176'640'000
+
+Eine Zahl, die nur noch mit einem long long dargestellt werden kann.
+Demzufolge müsste die Signatur eher wie folgt heissen:
+
+long long fakultaet(unsigned byte value) 
+
+Wenn die Funktion aber in einer Mathematik-Bibliothek eingesetzt werden soll,
+würde man vermutlich doch die Variante 1 wählen, damit die Signatur eher
+zu den anderen Funktionen passt, die in der Mathematik-Bibliothek zur
+Verfügung gestellt werden.
+

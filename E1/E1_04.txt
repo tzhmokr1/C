@@ -1,0 +1,6 @@
+
+De Operator sizeof kann auf Datentypen angewenet werden, z.B. sizeof(int), und gibt dann den im Speicher belegten Platz in Anzahl Byte an.
+
+Da 1 Byte = 8 Bit, ergibt z.B. das Resultat 2 eine Anzahl von 16 Bit.
+
+Für vorzeichenlose Zahlen lassen sich darin die Werte 0 .. 65535 (=2 hoch 16) ablegen.

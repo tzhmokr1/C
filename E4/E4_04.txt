@@ -1,0 +1,19 @@
+
+Die Werte für die Zeiger sind wie folgt:
+(char = 1 Byte, int 4 Byte)
+
+char* pc; ...
+pc = pc + 1;
+
+--> pc = 101
+
+
+int * pi; ...
+pi = pi + 2
+
+--> pi = 108
+
+int* pi; ...
+pi = ++pi
+
+--> pi = 104

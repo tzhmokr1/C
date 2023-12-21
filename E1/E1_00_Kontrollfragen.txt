@@ -1,0 +1,31 @@
+Wie muss der Compiler aufgerufen werden, wenn die Quellcodedatei alpha.c heisst und das ausführbare Programm greek.exe heissen soll?
+
+
+gcc alpha.c -o greek.exe
+-----------------------------------------------------------------------------------------------------------------
+
+
+Welche Funktion ist in jedem C-Programm vorhanden?
+
+
+main()
+-----------------------------------------------------------------------------------------------------------------
+
+
+Warum muss beim Hello-Word-Beispiel #include <stdio.h> angegeben werden?
+
+
+Damit die Bibliotheksfunktion printf() importiert wird, d.h., genau genommen deren Funktionsprototyp
+-----------------------------------------------------------------------------------------------------------------
+
+
+Ist der Bezeichner __1 für eine Variable erlaubt?
+
+.XX.ja      ....nein
+
+
+
+Ist der Variablenname f.muster erlaubt? 
+
+....ja      .XX.nein
+

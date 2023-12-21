@@ -1,0 +1,11 @@
+
+Die Zahlenmenge der positiven Zahlen ist nur scheinbar um eins kleiner, die 0
+wurde nicht mitgezählt.
+
+Negative Zahlen werden mit der Zweierkomplementdarstellung abgelegt.
+Eine Definition der Darstellung ist, dass ein führendes Bit eine negative
+Zahl darstellt. 
+
+Die Zahl 0 (alle Bits 0) gehört damit zu den positiven Zahlen:
+-128 ... -1 : 	128 Zahlen
+0 ... 127 :		128 Zahlen		
